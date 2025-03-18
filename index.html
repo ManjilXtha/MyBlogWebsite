@@ -1,0 +1,261 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyBlog - A Responsive Blog Platform</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">My<span>Blog</span></a>
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <nav>
+                <ul id="mainMenu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#">Categories</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#" id="loginBtn">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to MyBlog</h1>
+            <p>A place where ideas, insights, and inspiration come together. Explore our latest articles and join the conversation.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">Latest Posts</a>
+                <a href="#" class="btn btn-secondary">Subscribe</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container blogs-container">
+            <!-- Blog Posts -->
+            <section class="blog-posts">
+                <article>
+                    <div class="post-image" style="background-image: url('images/post1.jpeg');"></div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> March 15, 2025</span>
+                            <span><i class="far fa-user"></i> John Doe</span>
+                            <span><i class="far fa-folder"></i> Technology</span>
+                        </div>
+                        <h2 class="post-title">The Future of Artificial Intelligence in 2025</h2>
+                        <p class="post-excerpt">Artificial Intelligence continues to evolve at an unprecedented pace. In this article, we explore the latest advancements and what they mean for our future.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="post-image" style="background-image: url('images/post2.jpeg');"></div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> March 12, 2025</span>
+                            <span><i class="far fa-user"></i> Jane Smith</span>
+                            <span><i class="far fa-folder"></i> Lifestyle</span>
+                        </div>
+                        <h2 class="post-title">10 Productivity Habits That Will Transform Your Life</h2>
+                        <p class="post-excerpt">Discover the productivity habits that highly successful people swear by. These simple yet effective techniques can help you achieve more in less time.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <article>
+                    <div class="post-image" style="background-image: url('images/post3.jpeg');"></div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span><i class="far fa-calendar"></i> March 8, 2025</span>
+                            <span><i class="far fa-user"></i> Mark Johnson</span>
+                            <span><i class="far fa-folder"></i> Travel</span>
+                        </div>
+                        <h2 class="post-title">Exploring the Hidden Gems of Southeast Asia</h2>
+                        <p class="post-excerpt">Beyond the tourist hotspots lie incredible destinations waiting to be discovered. Join us as we uncover some of Southeast Asia's best-kept secrets.</p>
+                        <a href="#" class="read-more">Read More</a>
+                    </div>
+                </article>
+
+                <!-- Pagination -->
+                <ul class="pagination">
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                </ul>
+            </section>
+
+            <!-- Sidebar -->
+            <aside class="sidebar">
+                <!-- Search Widget -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Search</h3>
+                    <form class="search-form">
+                        <input type="text" class="search-input" placeholder="Search...">
+                        <button type="submit" class="search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Categories Widget -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Categories</h3>
+                    <ul class="categories-list">
+                        <li><a href="#">Technology (15)</a></li>
+                        <li><a href="#">Lifestyle (8)</a></li>
+                        <li><a href="#">Travel (10)</a></li>
+                        <li><a href="#">Health (12)</a></li>
+                        <li><a href="#">Business (9)</a></li>
+                    </ul>
+                </div>
+
+                <!-- Recent Posts Widget -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Recent Posts</h3>
+                    <ul class="recent-posts-list">
+                        <li>
+                            <a href="#" class="recent-post-title">The Future of Artificial Intelligence in 2025</a>
+                            <span class="recent-post-date">March 15, 2025</span>
+                        </li>
+                        <li>
+                            <a href="#" class="recent-post-title">10 Productivity Habits That Will Transform Your Life</a>
+                            <span class="recent-post-date">March 12, 2025</span>
+                        </li>
+                        <li>
+                            <a href="#" class="recent-post-title">Exploring the Hidden Gems of Southeast Asia</a>
+                            <span class="recent-post-date">March 8, 2025</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter Widget -->
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">Newsletter</h3>
+                    <p>Subscribe to our newsletter to get the latest updates directly in your inbox.</p>
+                    <form class="newsletter-form">
+                        <input type="email" class="newsletter-input" placeholder="Your Email Address">
+                        <button type="submit" class="newsletter-button">Subscribe</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-widget">
+                    <h3>About Us</h3>
+                    <p>MyBlog is a platform dedicated to sharing knowledge, inspiration, and insights across various topics. Join us in our journey of exploration and discovery.</p>
+                </div>
+
+                <div class="footer-widget">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Categories</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h3>Categories</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Health</a></li>
+                        <li><a href="#">Business</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-widget">
+                    <h3>Connect With Us</h3>
+                    <p>Follow us on social media to stay updated with our latest posts and announcements.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+                <p>&copy; 2025 MyBlog. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <div class="tab-container">
+                <div class="tabs">
+                    <div class="tab active" data-tab="login">Login</div>
+                    <div class="tab" data-tab="register">Register</div>
+                </div>
+                <div class="tab-content active" id="loginTab">
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="loginEmail" class="form-label">Email</label>
+                            <input type="email" id="loginEmail" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" id="loginPassword" class="form-input" required>
+                        </div>
+                        <button type="submit" class="form-button">Login</button>
+                        <div class="form-footer">
+                            <p>Forgot your password? <a href="#">Reset here</a></p>
+                        </div>
+                    </form>
+                </div>
+                <div class="tab-content" id="registerTab">
+                    <form id="registerForm">
+                        <div class="form-group">
+                            <label for="registerName" class="form-label">Full Name</label>
+                            <input type="text" id="registerName" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerEmail" class="form-label">Email</label>
+                            <input type="email" id="registerEmail" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerPassword" class="form-label">Password</label>
+                            <input type="password" id="registerPassword" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="registerConfirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" id="registerConfirmPassword" class="form-input" required>
+                        </div>
+                        <button type="submit" class="form-button">Register</button>
+                        <div class="form-footer">
+                            <p>Already have an account? <a href="#" class="switch-tab" data-tab="login">Login here</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
